@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cgnwcApp">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coconut Grove Negro Women's Club</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Taviraj" rel="stylesheet">
+  <link rel='stylesheet' href='css/style.css'>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css"
+    integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD"
+    crossorigin="anonymous">
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+</head>
+<body>
+
+  <div class='pure-g' id='mainContainer'>
+
+    <header class='pure-g pure-u-1' id='headerLogo'>
+      <img class='pure-img' id="mainLogo" src='./assets/orgLogos/logo1.png'>
+    </header>
+
+    <div class='pure-g pure-u-1 pure-menu-horizontal' id='navContainer'>
+      <ul class='pure-menu-list myNav' id='navbar'>
+          <div>
+            <li class='pure-menu-item'>
+              <a href='/#!/' class='pure-menu-link'>HOME</a>
+            </li>
+          </div>
+          <div>
+            <li class='pure-menu-item'>
+              <a href='/#!/mission' class='pure-menu-link'>MISSION</a>
+            </li>
+          </div>
+          <div>
+            <li class='pure-menu-item'>
+              <a href='/#!/programs' class='pure-menu-link'>PROGRAMS</a>
+            </li>
+          </div>
+          <div>
+            <li class='pure-menu-item'>
+              <a href='/#!/events' class='pure-menu-link'>EVENTS</a>
+            </li>
+          </div>
+          <div>
+            <li class='pure-menu-item'>
+              <a href='/#!/contactUs' class='pure-menu-link'>CONTACT US</a>
+            </li>
+          </div>
+      </ul>
+
+<!--       <ul class='pure-g pure-u-1 pure-menu-vertical'>
+        <div>
+          <span>-</span>
+          <span>-</span>
+          <span>-</span>
+        <div>
+      </ul> -->
+
+    </div>
+
+    <div class='pure-g pure-u-1' id='mainBodyContainer'>
+      <div id='mainContent' ng-view>
+          <!-- Partial Routes Render Here -->
+      </div>
+      <footer class='pure-g pure-u-1' id='myFooter'>CGNWC &copy2017</footer>
+    </div>
+
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
+
